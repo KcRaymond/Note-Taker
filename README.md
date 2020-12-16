@@ -24,7 +24,7 @@ To install necessary dependencies run the following command:
 
 ## Usage Information:
 
-Server must be started by running node server.js in the VS Code terminal to launch the app. Or can be viewed on the deployed Heroku URL. Click screenshot image to visit Heroku URL.
+Server must be started by running node server.js in the VS Code terminal to launch the app. Then you can view in your browser in localhost:8080. Or can be viewed on the deployed Heroku URL. Click screenshot image to visit Heroku URL.
 
 > <a href="https://kcs-note-taker.herokuapp.com/"><img src="public\assets\notetaker-screenshot.jpg" alt="HTML tutorial" style="width:750px;"></a>
 
