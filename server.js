@@ -1,0 +1,23 @@
+// Dependencies
+const express = require("express");
+
+// Create express app instance.
+const app = express();
+
+// Set the port of our application
+// process.env.PORT lets the port to be set by Heroku
+const PORT = process.env.PORT || 8080;
+
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public")); // added to connect Public folder to server.js
+
+//router
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+//Listener to see if the server is up and listening
+app.listen(PORT, () => {
+  console.log(`App listening on PORT: ${PORT}`);
+});
