@@ -1,9 +1,10 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(black, teal);
 }
-
 .save-note {
   display: none;
 }
@@ -15,17 +16,23 @@ html, body {
   cursor: pointer;
 }
 
-.note-textarea, .note-title {
-  color: #000000;
+.note-textarea,
+.note-title {
+  color: teal;
   width: 100%;
   outline: none;
   border: none;
+  padding-top: 23px;
+  padding-bottom: 28px;
+  padding-left: 11px;
+  margin-bottom: 25px;
 }
 
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  padding-left: 12px;
 }
 
 .note-title {
@@ -34,7 +41,8 @@ html, body {
   font-size: 3rem;
 }
 
-.note-title:read-only, .note-textarea:read-only {
+.note-title:read-only,
+.note-textarea:read-only {
   color: #757575;
 }
 
